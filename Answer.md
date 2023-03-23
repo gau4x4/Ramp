@@ -10,7 +10,7 @@ Bug 4-: Appending existing transactions in the new or load more array in paginat
 #####
 Bug 5-:Instead of showing that the data is loading on opening the dropdown and clicking on view more, we can use the async methods promise to handle the loading status.
 #####
-Bug 6-: The viewmore button is only visible iff there is a next page in the pagination. this removes the view more button if the page has reached its end.
+Bug 6-: The viewmore button is only visible iff there is a next page in the pagination. this removes the view more button if the page has reached its end or if we select fetch by employee id, since there is no next page in the paginationtransactions data, the viewmore button will not be visible for employee by fetching of data.
 #####
 Bug 7-:clearCacheByEndpoint(For clearning Cache in order to keep the checkbox changes through the api) on click of the checkbox.
 
