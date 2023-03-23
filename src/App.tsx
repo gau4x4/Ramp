@@ -69,10 +69,10 @@ export function App() {
             label: `${item.firstName} ${item.lastName}`,
           })}
           onChange={async (newValue) => {
-            const fetchBy = newValue?.id;
+            // const fetchBy = newValue?.id;
             if (newValue === null) {
               return;
-            } else if (fetchBy === "") {
+            } if (newValue?.id === "") {
               await loadAllTransactions(true);
             } else {
               await loadTransactionsByEmployee(newValue.id);
