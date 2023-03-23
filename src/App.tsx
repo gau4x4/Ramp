@@ -72,7 +72,8 @@ export function App() {
             // const fetchBy = newValue?.id;
             if (newValue === null) {
               return;
-            } if (newValue?.id === "") {
+            }
+            if (newValue?.id === "") {
               await loadAllTransactions(true);
             } else {
               await loadTransactionsByEmployee(newValue.id);
